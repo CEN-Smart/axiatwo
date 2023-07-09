@@ -213,6 +213,11 @@ table{
   font-size: 1.2rem;
 }
 
+.border__line{
+  border-top: 1px solid rgba(134, 139, 138, 0.2);
+  padding-top: 2rem;
+}
+
 .flex__label{
   font-size: 1.1rem;
   font-weight: 500;
