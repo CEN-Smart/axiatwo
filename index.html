@@ -6,7 +6,15 @@
   <link rel="stylesheet" href="styles.css">
   <title>Axia Second project</title>
 </head>
-<body>
+<body id="body">
+  <div class="modal hidden">
+    <div class="center__me">
+      <div class="btn__close">X</div>
+      <h1>Modal Header</h1>
+      <p>Modal Body</p>
+      <p>Modal Footer</p>
+    </div>
+  </div>
  <header class="header">
      <div class="container__header">
       <a href="/" class="header__logo">Jobless</a>
@@ -17,6 +25,10 @@
           <a class="nav__link" href="#">Contact Us</a>
         </nav>
         <a href="#" class="sign__up">Sign Up</a>
+        <svg class="menu__btn" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+</svg>
+
      </div>
  </header>
 
@@ -27,7 +39,7 @@
       <p class="paragraph">
 Discover a wide range of remote opportunities on our platform and take control of your career</p>
       <div class="btn__group">
-        <a href="#" class="btn__cta">Explore remote Jobs</a>
+        <a href="#" class="btn__cta">Explore remote Jobs <span>More</span></a>
       <a href="#" class="how">How it works?</a>
       </div>
     </div>
@@ -83,5 +95,6 @@ Discover a wide range of remote opportunities on our platform and take control o
     </div>
   </section>
  </main>
+ <script src="/app.js"></script>
 </body>
 </html>

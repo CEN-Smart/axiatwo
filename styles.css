@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
 
 :root{
   --btn-primary:#B68C4D;
@@ -18,10 +19,10 @@ html{
 }
 
 body{
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Inter', sans-serif;
   line-height:1.5;
-  background:  linear-gradient(to right,rgb(215, 169, 236) 0%,rgb(212, 245, 185) 40.6%,rgb(212, 245, 185) 55.9%,rgb(191, 248, 250) 99.3%);
-}
+  background:  linear-gradient(to right,rgb(231, 209, 241) 0%,rgb(212, 245, 185) 40.6%,rgb(212, 245, 185) 55.9%,rgb(210, 239, 240) 99.3%);
+} 
 
 a:any-link{
   text-decoration:none;
@@ -67,6 +68,7 @@ table{
 .header{
   padding: 2rem 0;
   box-shadow:var(--dropShadow-primary);
+  position: sticky
 }
 
 .container__header{
@@ -248,6 +250,7 @@ table{
 }
 
 
+
 .item__list{
   background-color: #0019FF;
   padding: 2.5rem;
@@ -278,8 +281,17 @@ table{
 .grid__list{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  margin-left: auto;
   gap: 2rem;
+
 }
+ .menu__btn{
+    width: 5rem;
+    background-color: transparent;
+    padding: .2rem .5rem;
+    cursor: pointer;
+    display:none;
+  }
 
 /* Medai Queries */
 
@@ -288,7 +300,11 @@ table{
     max-width: 60%;
   }
 
-  .nav{
+  .menu__btn{
+    display: block;
+  }
+
+  .nav, .sign__up{
     display: none;
   }
 }
@@ -311,4 +327,22 @@ table{
   .container__center{
     max-width: 95%;
   }
+}
+
+
+.modal{
+  display: grid;
+  place-items: center;
+  position: absolute;
+  width: 70%;
+  height: 100%;
+  background-color: #B2BAFF;
+  z-index: 99999;
+  transform: translateX(0);
+  transition: all .5s ease-in-out;
+}
+
+.hidden{
+
+  transform: translateX(-100%);
 }
